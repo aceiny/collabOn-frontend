@@ -2,7 +2,6 @@ import React from 'react'
 import SideBar from '../components/SideBar'
 import FixedNavBar from '../components/FixedNavBar'
 import CollaborationCard from './businessOwner/components/CollaborationCard'
-import FolderCard from './businessOwner/components/FolderCard'
 const Collaboration = () => {
   return (
     <div className = ''>
@@ -26,11 +25,3 @@ const Collaboration = () => {
 }
 
 export default Collaboration
-/*            <div className='flex flex-col gap-3'>
-                <h1 className='text-[#56555C]  items-center justify-start text-[16px] '>Folders</h1>
-                <div className='flex flex-wrap items-center'>
-                    <FolderCard/>
-                    <FolderCard/>
-                    <FolderCard/>
-                </div>
-            </div>*/

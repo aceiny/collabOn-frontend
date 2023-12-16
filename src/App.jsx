@@ -17,8 +17,11 @@ import Collaboration from './pages/Collaboration'
 import Analytics from './pages/businessOwner/Analytics';
 import ProfileB from './pages/businessOwner/profileB';
 import ProjectDetails from './pages/businessOwner/ProjectDetails';
-
-  
+import { useDispatch, useSelector } from 'react-redux';
+import { GetBusiness , getWorker } from './redux/slices/businessSlice';
+import { fetchProjects } from './redux/slices/projectSlice'
+import CreateProject from './components/CreateProject';
+import CreateWorker from './components/CreateWorker';
 
 function App() {
   useEffect(() => {
@@ -72,9 +75,33 @@ function App() {
       element : <Activity />
     }
   ]
+  const dispatch = useDispatch()
+  const business = useSelector(state => state.business.business)
+  const workers = useSelector(state => state.business.workers)
+  const projects = useSelector(state => state.projects.projects)
+  useEffect(()=>{
+    if(!business){
+      dispatch(GetBusiness())
+    }
+  },[])
+  useEffect(()=>{
+    if(business && !workers){
+      dispatch(getWorker(business._id))
+    }
+  },[business])
+  useEffect(()=>{
+    if(business && !projects){
+      console.log('normalmo takhdem')
+      dispatch(fetchProjects(business._id))
+    }
+  },[business])
+  const [showCP , setShowCP] = useState(true) ; const showCPHandler = (B) => {setShowCP(B)}
+  const [showCW , setShowCW] = useState(false) ; const showCWHandler = (B) => {setShowCW(B)}
   return (
     <BrowserRouter >
       <ToastContainer />
+      <CreateProject show={showCP} handler={showCPHandler}/>
+      <CreateWorker show={showCW} handler={showCWHandler} />
           <Routes >
             {
               routes.map((route,i)=>{

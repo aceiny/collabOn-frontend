@@ -14,6 +14,9 @@ import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
 import Activity from './pages/businessOwner/Activity';
 import Collaboration from './pages/collaboration';
+import Analytics from './pages/businessOwner/Analytics';
+import ProfileB from './pages/businessOwner/profileB';
+import ProjectDetails from './pages/businessOwner/ProjectDetails';
 
   
 
@@ -40,6 +43,17 @@ function App() {
     {
       path : "/admin",
       element : <AdminMain />
+    },    {
+      path : "/analytics",
+      element : <Analytics />
+    },
+    {
+      path : "/projectdetails",
+      element : <ProjectDetails/>
+    },
+    {
+      path : "/profile",
+      element : <ProfileB />
     },
     {
       path : "/calender",

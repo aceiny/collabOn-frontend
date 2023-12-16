@@ -21,7 +21,7 @@ const FixedNavBar = () => {
                     <img src={notification} alt="" />
                 </button>
                 <div className=' flex gap-4  '>
-                    <img src={adminPic} alt="" />
+                    <Link to="/profile"><img src={adminPic} alt="" /></Link>
                     <div>
                         <h1 className=' text-xl font-bold '>i wanna sleep</h1>
                         <p>bytebyte@estin.dz</p>

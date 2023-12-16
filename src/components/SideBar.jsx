@@ -41,10 +41,10 @@ const SideBar = () => {
       path : "/activity"
     },
     {
-      name : "Projects",
+      name : "collaboration",
       image : projectsIcon,
       focusImage : projectsIconWhite,
-      path : "/projects"
+      path : "/collaboration"
     },
   ]
   return (
@@ -83,3 +83,9 @@ const SideBar = () => {
 };
 
 export default SideBar;
+/*{
+  name : "Projects",
+  image : projectsIcon,
+  focusImage : projectsIconWhite,
+  path : "/projects"
+},*/

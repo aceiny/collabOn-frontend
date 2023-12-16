@@ -14,7 +14,7 @@ const Home = () => {
           alt=""
           className="w-[600px] absolute z-0 top-60 mx-[20%]"
         />
-        <div className="z-30 absolute flex w-full justify-center items-center h-screen  px-2">
+        <div className="z-30 absolute top-[50%] translate-y-[-50%] flex w-full justify-center items-center h-screen  px-2">
           <div className="flex flex-col w-[20%] ">
             <button className="bg-primaryGreen p-2 rounded-xl mb-5">
               <Link to="/signup"> Sign up as an business owner</Link>

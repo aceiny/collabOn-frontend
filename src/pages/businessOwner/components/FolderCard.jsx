@@ -1,5 +1,6 @@
 import React from 'react'
 import top from '../../../assets/images/foldertop.svg'
+
 const FolderCard = () => {
   return (
     <div className='border flex flex-col justify-between relative top-[35px] p-[26px]  border-[#ACACAB] w-[166px] h-[125px] rounded-r-[13px] '>

@@ -48,7 +48,7 @@ const SideBar = () => {
     },
   ]
   return (
-    <div className=" fixed w-[15%] h-[100dvh] bg-gray-100 flex flex-col items-center justify-around font-poppins text-lg  text-gray-600 ">
+    <div className=" z-50 fixed w-[15%] h-[100dvh] bg-gray-100 flex flex-col items-center justify-around font-poppins text-lg  text-gray-600 ">
       <img className=" w-[140px] " src={logo} alt="" />
       <div>
         <ul className=" flex flex-col gap-6 w-[100%] ">

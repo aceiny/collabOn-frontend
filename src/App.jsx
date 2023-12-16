@@ -13,7 +13,7 @@ import AdminChat from './pages/businessOwner/AdminChat';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
 import Activity from './pages/businessOwner/Activity';
-import Collaboration from './pages/collaboration';
+import Collaboration from './pages/Collaboration'
 import Analytics from './pages/businessOwner/Analytics';
 import ProfileB from './pages/businessOwner/profileB';
 import ProjectDetails from './pages/businessOwner/ProjectDetails';

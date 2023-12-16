@@ -1,5 +1,5 @@
 import React , {useState , useEffect} from 'react'
-import arrow from '../assets/icons/arrow.svg'
+import arrow from '../assets/icons/Arrow.svg'
 import { useDispatch } from 'react-redux';
 import { createProject } from '../redux/slices/projectSlice';
 const CreateProject = ({show , handler}) => {

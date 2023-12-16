@@ -1,5 +1,5 @@
 import React , {useState,useEffect} from 'react'
-import arrow from '../assets/icons/arrow.svg'
+import arrow from '../assets/icons/Arrow.svg'
 import { useDispatch, useSelector } from 'react-redux';
 import { createWorker } from '../redux/slices/businessSlice';
 const CreateWorker = ({show , handler}) => {
